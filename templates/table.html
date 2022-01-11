@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<table>
+    <tr>
+    {% for item in data["header"] %}
+        <th>{{item}}</th>
+    {% endfor %}
+    </tr>
+
+    {% for item in data["body"] %}
+    <tr>
+
+        <td>{{item[0]}}</td>
+
+        <td>{{item[1]}}</td>
+
+        <td>{{item[2]}}</td>
+
+        <td>{{item[3]}}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
